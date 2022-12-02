@@ -3,14 +3,16 @@ import java.util.Scanner;
 import java.io.File;
 
 /**
- * Javadoc me
+ * @author 24steinbergb
+ * @version 12.02.22
+ * takes values data from file and converts it to a new base
  */
 public class BaseConverter {
     private final String DIGITS = "0123456789ABCDEF";
 
     /**
      * Convert a String num in fromBase to base-10 int.
-     * @param num      the original number
+     * @param num  the original number
      * @param fromBase the original from base
      * @return a base-10 int of num base fromBase
      */
@@ -36,13 +38,12 @@ public class BaseConverter {
          */
 
 
-
-
     /**
      * Javadoc me
-     * @param num
-     * @param toBase
-     * @return
+     * conver an int in base-10 to a string that is in a new base
+     * @param num is the original number
+     * @param toBase the new base the number is going to
+     * @return the result of base 10 coverted.
      */
     public String intToStr(int num, int toBase) {
         String toNum = new String();
@@ -55,7 +56,8 @@ public class BaseConverter {
         return (toNum.equals("")) ? "0" : toNum;
     }
     /**
-     * This is now changed.
+     * Take values from data file
+     * conver the values to a new base and write to a converted.dat
      */
     public void inputConvertPrintWrite() {
         Scanner in = null;
@@ -102,8 +104,8 @@ public class BaseConverter {
                 }
         }
             /**
-     * Javadoc me
-     * @param args
+     * Main method class base converter
+     * @param args command line arguments if needed
      */
     public static void main(String[] args){
             BaseConverter bc = new BaseConverter();
