@@ -55,7 +55,7 @@ public class BaseConverter {
         return (toNum.equals("")) ? "0" : toNum;
     }
     /**
-     * Javadoc me
+     * This is now changed.
      */
     public void inputConvertPrintWrite() {
         Scanner in = null;
